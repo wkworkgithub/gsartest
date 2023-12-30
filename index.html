@@ -28,12 +28,10 @@
     <body style="margin: 0; overflow: hidden;">
         <a-scene
             vr-mode-ui="enabled: false"
-            renderer="logarithmicDepthBuffer: true;"
             loading-screen="enabled: false;"
             arjs='sourceType: webcam; debugUIEnabled: false;'
             id="scene"
             embedded
-            arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
             gesture-detector
         >
             <a-assets>
@@ -42,11 +40,11 @@
                     src="assets/asset.mp4"
                     preload="auto"
                     response-type="arraybuffer"
+					vid.volume = "1"
                     loop
                     crossorigin
                     webkit-playsinline
                     autoplay
-                    unmuted
                     playsinline
                 ></video>
             </a-assets>
@@ -67,7 +65,7 @@
             >
                 <a-video
                     src="#vid"
-                    scale="2 3 2"
+                    scale="1 1 1"
                     position="0 0.1 0"
                     rotation="-90 0 0"
                     class="clickable"
