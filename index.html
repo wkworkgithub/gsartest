@@ -29,13 +29,12 @@
         <a-scene
             vr-mode-ui="enabled: false"
             renderer="logarithmicDepthBuffer: true;"
-            loading-screen="enabled: true;"
+            loading-screen="enabled: false;"
             arjs='sourceType: webcam; debugUIEnabled: false;'
             id="scene"
             embedded
             arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
             gesture-detector
-            <div>Loading, please wait...</div>
         >
             <a-assets>
                 <video
@@ -47,6 +46,7 @@
                     crossorigin
                     webkit-playsinline
                     autoplay
+                    unmuted
                     playsinline
                 ></video>
             </a-assets>
@@ -67,7 +67,7 @@
             >
                 <a-video
                     src="#vid"
-                    scale="1 1 1"
+                    scale="2 3 2"
                     position="0 0.1 0"
                     rotation="-90 0 0"
                     class="clickable"
