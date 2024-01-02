@@ -52,24 +52,26 @@
     <a-scene
         vr-mode-ui="enabled: false;"
         renderer='antialias: true; alpha: true; precision: medium;'
-        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+        embedded 
+	arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
         <a-assets timeout='10000'>
             <video 
 		src="KKR.mp4"
                 preload="auto"
 		id="vid" 
-		response-type="arraybuffer" loop
+		response-type="arraybuffer" 
+		loop
                 crossorigin
 		webkit-playsinline 
-		autoplay playsinline
+		autoplay 
+		playsinline
 		></video>
         </a-assets>
 
         <a-nft
         videohandler
         type='nft'
-	preset="custom"
 	url='KKR_AR/data/default-marker'
         smooth="true"
 	smoothCount="10"
