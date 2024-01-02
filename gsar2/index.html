@@ -54,7 +54,7 @@
         renderer='antialias: true; alpha: true; precision: medium;'
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
-        <a-assets timeout='60000'>
+        <a-assets timeout='10000'>
             <video 
 		src="MGO_MV.mp4"
                 preload="auto"
@@ -79,8 +79,8 @@
 		
             <a-video
   		src="#vid"
-                position='50 150 -100'
-                rotation='90 0 180'
+                position='0 0.1 0'
+                rotation='-90 0 0'
                 width='100'
                 height='100'
                 >
