@@ -55,24 +55,33 @@
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
         <a-assets timeout='60000'>
-            <video src="MGO_MV.mp4"
-                preload="auto" id="vid" response-type="arraybuffer" loop
-                crossorigin webkit-playsinline autoplay playsinline>
-            </video>
+            <video 
+		src="MGO_MV.mp4"
+                preload="auto"
+		id="vid" 
+		response-type="arraybuffer" loop
+                crossorigin
+		webkit-playsinline 
+		autoplay playsinline
+		></video>
         </a-assets>
 
         <a-nft
-            videohandler
-            type='nft' url='gsar2/data/MGO_suisei'
-            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
+        videohandler
+        type='nft'
+	preset="custom"
+	url='gsar2/data/MGO_suisei'
+        smooth="true"
+	smoothCount="10"
+	smoothTolerance="0.01" 
+	smoothThreshold="5"
         >
+		
             <a-video
 		src="#vid"
                     scale="2 2 1"
-                    position="0 0.1 0"
+                    position="0 -150 0"
                     rotation="-90 0 0"
-                width='300'
-                height='175'
                 >
             </a-video>
         </a-nft>
