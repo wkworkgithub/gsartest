@@ -54,10 +54,10 @@
         renderer='antialias: true; alpha: true; precision: medium;'
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
-        <a-assets>
+        <a-assets timeout='60000'>
             <video src="MGO_MV.mp4"
                 preload="auto" id="vid" response-type="arraybuffer" loop
-                crossorigin webkit-playsinline autoplay muted playsinline>
+                crossorigin webkit-playsinline autoplay playsinline>
             </video>
         </a-assets>
 
@@ -68,8 +68,8 @@
         >
             <a-video
                 src="#vid"
-                position='50 150 -100'
-                rotation='90 0 180'
+                position='0 0 0.1'
+                rotation='90 0 0'
                 width='300'
                 height='175'
                 >
